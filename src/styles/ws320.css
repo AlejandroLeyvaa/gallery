@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--font-size-h2: 2rem;
+	--font-size-p: 1.8rem;
+	--font-size-span: 1.4rem;
+	--font-size-button: 1.4rem;
+  --columns: 4;
+  --gap: 1.6rem;
+  --dark-primary-color: #512da8;
+  --default-primary-color: #673ab7;
+  --light-primary-color: #d1c4e9;
+  --text-primary-color: #ffffff;
+  --accent-color: #e040fb;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+	--divider-color: #bdbdbd;
+
+  --primary-datk-color: #212121;
+}
+
+a,
+body,
+div,
+ul,
+li,
+section,
+main,
+header,
+menu,
+nav,
+footer,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+form,
+input,
+figure,
+image,
+picture,
+span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Header {
+  min-width: 320px;
+	width: 100%;
+	color: var(--text-primary-color);
+}
+
+.Header-items {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header-logo,
+.Header-icons {
+	width: 50%;
+  padding: 1.6rem;
+}
+
+.Header-icons {
+	display: flex;
+	justify-content: center;
+}
+
+.Header-icons h2 {
+  margin: 0 1.6rem;
+}
+
+.Main {
+	width: 100%;
+	min-width: 320px;
+	max-width: 100vw;
+	height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Grid {
+	display: grid;
+	grid-template-columns: max-content max-content;
+	grid-template-rows: none;
+}
+
+.item {
+	width: 160px
+}
+
+.item2 {
+	background-color: royalblue;
+	width: 200px;
+	height: 100px;
+}

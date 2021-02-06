@@ -1,0 +1,11 @@
+@media screen and (min-width: 1200px) {
+  .Grid {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    /* grid-template-rows: none; */
+  }
+
+  .item {
+    width: 300px;
+  }
+}
