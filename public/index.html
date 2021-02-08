@@ -1,90 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Galllery</title>
 </head>
 
 <body>
-  <main class="Main" id="main">
-    <section class="Grid">
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-      <figure class="item">
-        <img src="../src/assets/images/fantasy1280.jpg" alt="">
-      </figure>
-    </section>
+  <header class="Header">
+    <div class="File-input-container Flex">
+      Add image
+      <input class="Form-input-file" type="file" name="image" id="addImage">
+    </div>
+    <div class="Hide-buttons Flex">
+      <button class="Hide" id="hide" class="button" type="button">Hide Options</button>
+      <!-- <button class="Hide" id="hideAll" class="button" type="button">Hide All</button> -->
+    </div>
+  </header>
+    <article class="Gallery-addImage-container">
+      <div class="Gallery-button-container">
+        <form class="None" action="" id="form">
+          <label for="width">
+            <span>Width</span>
+            <input type="text" name="width" id="width" placeholder="100">
+          </label>
+          <label for="height">
+            <span>Height</span>
+            <input type="text" name="height" id="height" placeholder="100">
+          </label>
+          <div class="Form-buttons">
+            <button class="button" type="submit">Set Size</button>
+          </div>
+        </form>
+      </div>
+    </article>
+  <main class="Gallery-container">
   </main>
 </body>
 
