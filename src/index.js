@@ -8,6 +8,7 @@ import './styles/ws1200.css';
 const addImage = document.querySelector('#addImage');
 const form = document.querySelector('#form');
 const setWidth = document.querySelector('#width');
+const setSize = document.querySelector('#bgSize');
 const setHeight = document.querySelector('#height');
 const gallery = document.querySelector('.Gallery-container');
 const hideButtons = document.querySelector('.Hide-buttons');
@@ -37,12 +38,15 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const galleryImageContainer = document.getElementsByClassName('Gallery-image-container');
   const nodeList = document.querySelectorAll('.Gallery-image-container');
+  const bgSize = setSize.value;
   const width = setWidth.value;
   const height = setHeight.value;
 
+  console.log(bgSize);
   if (galleryImageContainer.length > 0) {
     const arrElements = [...nodeList];
     arrElements.forEach((item)=> {
+      item.style.backgroundSize = bgSize;
       item.style.width = `${width}px`;
       item.style.height = `${height}px`;
     })

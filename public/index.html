@@ -18,23 +18,32 @@
       <!-- <button class="Hide" id="hideAll" class="button" type="button">Hide All</button> -->
     </div>
   </header>
-    <article class="Gallery-addImage-container">
-      <div class="Gallery-button-container">
-        <form class="None" action="" id="form">
-          <label for="width">
-            <span>Width</span>
-            <input type="text" name="width" id="width" placeholder="100">
-          </label>
-          <label for="height">
-            <span>Height</span>
-            <input type="text" name="height" id="height" placeholder="100">
-          </label>
-          <div class="Form-buttons">
-            <button class="button" type="submit">Set Size</button>
-          </div>
-        </form>
-      </div>
-    </article>
+  <article class="Gallery-addImage-container">
+    <div class="Gallery-button-container">
+      <form class="None" action="" id="form">
+        <label for="bgSize">
+          <span>Background fill</span>
+          <input id="bgSize" list="size" placeholder="cover or contain or auto">
+          <datalist id="size">
+            <option value="cover"></option>
+            <option value="contain"></option>
+            <option value="auto"></option>
+          </datalist>
+        </label>
+        <label for="width">
+          <span>Width</span>
+          <input type="text" name="width" id="width" placeholder="100">
+        </label>
+        <label for="height">
+          <span>Height</span>
+          <input type="text" name="height" id="height" placeholder="100">
+        </label>
+        <div class="Form-buttons">
+          <button class="button" type="submit">Set Size</button>
+        </div>
+      </form>
+    </div>
+  </article>
   <main class="Gallery-container">
   </main>
 </body>
