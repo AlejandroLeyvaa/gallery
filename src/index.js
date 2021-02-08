@@ -42,10 +42,6 @@ form.addEventListener('submit', (e) => {
 
   if (galleryImageContainer.length > 0) {
     const arrElements = [...nodeList];
-    console.log(galleryImageContainer);
-    console.log(nodeList);
-    console.log('sdsdsdfdsflkj', arrElements);
-
     arrElements.forEach((item)=> {
       item.style.width = `${width}px`;
       item.style.height = `${height}px`;
@@ -65,6 +61,5 @@ addImage.addEventListener('change', (e) => {
   const bitMap = window.URL.createObjectURL(file);
   div.style.backgroundImage = `url('${bitMap}')`;
   article.className = 'Gallery-addImage-container';
-  console.log(bitMap);
   gallery.appendChild(article);
 });
